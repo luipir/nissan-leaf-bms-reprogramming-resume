@@ -1,6 +1,6 @@
 # Notes about leaf BMS reprogramming
 
-This are notes to resume a long thread started by @safetyhuggs in https://mynissanleaf.com
+This are notes to resume a long thread started by @safetyuggs in https://mynissanleaf.com
 This thread explains all the steps that lead to Nissan Leaf LBC / BMS reprogramming.
 Lack of important KWP files that have to be downloaded from Nissan Tech webpage paying a fee.
 
@@ -112,7 +112,7 @@ or use use a UCAN from fysetc - They're ~$4 from aliexpress.
 
 ### Yaste KIT firmware
 
-ask to Safetyhuggs as in https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-reflashing-bms.36627/post-657255
+ask to safetyuggs as in https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-reflashing-bms.36627/post-657255
 
 useful for 3NA0* BMS and CATL modules as in Yaste kit
 
