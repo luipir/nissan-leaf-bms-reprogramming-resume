@@ -87,6 +87,19 @@ get from: https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-refl
 
 3NA0A/B/C BMS's 
 
+### flashing notes BEAWARE!
+
+- If your leaf is NOT a ZE0 (3NA0A/B/C/D etc BMS), resetting SOH will almost certainly give you 4 SOH bars
+- If you decided to do it anyway (It can improve mileage etc...) you now have 4 health bars.
+- This was Nissans intention to prevent SOH ever being modified. It can only ever go down, not up.
+- The ONLY way we know to restore SOH bars, as of this post, is to flash a MODIFIED firmware back to your BMS which allows SOH bars to go back up.
+- You must have a copy of your BMS firmware to modify it.
+- You can buy SOME firmware's from Nissan-tech website, but not all firmwares.
+- You cannot dump the firmware from your BMS (Without dedicated hardware and access to the BMS circuit board)
+- Modifying firmware takes a few hours, there is no simple app to modify it for you.
+- You will need a tactrix and my windows app to reflash a BMS.
+- My app cannot reflash all BMS's.
+
 ### flashing notes
 
 tool will work directly with the bms, or via the obd2 port (evcan). I use tactrix open port mostly, but UCAN is still suppoted, just a lot slower.
