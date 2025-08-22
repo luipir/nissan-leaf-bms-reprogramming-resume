@@ -83,6 +83,11 @@ Python version for kwp2bin is here: https://gist.github.com/developerfromjokela/
 see video: https://www.youtube.com/watch?v=SQbSlcoTh-I
 get from: https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-reflashing-bms.36627/post-657535
 
+#### Any info about how to load firmware into tang9k fpga board
+
+This board is used to do the glitch attack and dump firmare.
+To load firmware read carefully this wiki: https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-9K/Nano-9K.html
+
 ### Tested boards
 
 3NA0A/B/C BMS's 
