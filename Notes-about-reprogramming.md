@@ -25,21 +25,22 @@ challenge implemented in PID27_65 code.
 
 293A0 General Leaf model
 
-4NR4A is AZE0 30kWh BMS
-6WK4A is ZE1 60kWh (not 62) Uk Magneti Marelli
+- 4NR4A is AZE0 30kWh BMS
 
-3NA0A/3NA0C -24 kWh ZE0(without heater battery)
-3NA1A/3NA1B - 24 kWh ZE0(battery heater)
-3NF1A - 24 kWh AZE0
-9RB3A - 24 kWh ( 2015 m/y )
-4NP2A - 24 kWh ( 2016 m/y )
-4NP4A/ - 30 kWh (old version)
-4NP4C - 30 kWh (new version)
-5SA2B/5SH2D - 40 kWh
-6SH1A - 62 kWh
+- 6WK4A is ZE1 60kWh (not 62) Uk Magneti Marelli
+- 3NA0A/3NA0C -24 kWh ZE0(without heater battery)
 
-4FA2B - 24 kWh e-NV 200 (without heater)
-6WX2A - 40 kW e-NV200
+- 3NA1A/3NA1B - 24 kWh ZE0(battery heater)
+- 3NF1A - 24 kWh AZE0
+- 9RB3A - 24 kWh ( 2015 m/y )
+- 4NP2A - 24 kWh ( 2016 m/y )
+- 4NP4A/ - 30 kWh (old version)
+- 4NP4C - 30 kWh (new version)
+- 5SA2B/5SH2D - 40 kWh
+- 6SH1A - 62 kWh
+
+- 4FA2B - 24 kWh e-NV 200 (without heater)
+- 6WX2A - 40 kW e-NV200
 
 ### Board/Firmware incompatibilities
 
@@ -51,17 +52,17 @@ You can reprogram a AZE0 24kwh with 30kwh firmware, but you can't put 30kwh firm
 from https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-reflashing-bms.36627/page-13#post-654844
 
 BMS Firmware Version - CRC reflash IV:
-5SA2AVB - A6BC
-3NK2ARB - C5ED
-3NK0BRB - D30E
-3NA0DBE - D91C
+- 5SA2AVB - A6BC
+- 3NK2ARB - C5ED
+- 3NK0BRB - D30E
+- 3NA0DBE - D91C
 
 
 АZЕО-24
-3NF1ARBQ - 9BF7
+- 3NF1ARBQ - 9BF7
 
 ZE0-24
-3NA0DPBE - C01D
+- 3NA0DPBE - C01D
 
 ## Flashing steps
 
@@ -136,6 +137,7 @@ useful for 3NA0* BMS and CATL modules as in Yaste kit
 
 ### Bootloader recognised PIDs
 
+```
 IV: C3 48
 Seed: 7001DF8C
 Integer value (decimal): 1879170956
@@ -182,14 +184,15 @@ Error Response: Yes (0x7F)
 Requested PID: 0x3E
 Error Code: 0x12
 Error Description: Subfunction not supported
+```
 
 ### Lookup tables
 
 source: https://mynissanleaf.com/threads/reverse-engineering-bms-firmware-reflashing-bms.36627/post-656788
 
 For 3NA0D that you're working on, have a look at 0x0003EF10 for the 6x20 table values.
-X axis at 0x0003EEE0
-Y axis at 0x0003EEE8
+- X axis at 0x0003EEE0
+- Y axis at 0x0003EEE8
 
 #### Ah calculation and table
 
